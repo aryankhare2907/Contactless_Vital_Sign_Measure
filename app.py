@@ -495,6 +495,6 @@ def resp_feed():
     return Response(gen_resp(), mimetype='multipart/x-mixed-replace; boundary=frame')
 @app.route('/spo2_feed')
 def spo2_feed():
-    return Response(gen_spo2(), mimetype='multipart/x-mixed-replace; boundary=frame')"""
+    return Response(gen_spo2(), mimetype='multipart/x-mixed-replace; boundary=frame')  """
 if __name__=='__main__':
     app.run(debug=True)
