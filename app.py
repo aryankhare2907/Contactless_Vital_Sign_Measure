@@ -487,7 +487,7 @@ def gen_spo2():
 @app.route('/')
 def index():
     return render_template('index.html')
-@app.route('/video_feed')
+"""@app.route('/video_feed')
 def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 @app.route('/resp_feed')
@@ -495,6 +495,6 @@ def resp_feed():
     return Response(gen_resp(), mimetype='multipart/x-mixed-replace; boundary=frame')
 @app.route('/spo2_feed')
 def spo2_feed():
-    return Response(gen_spo2(), mimetype='multipart/x-mixed-replace; boundary=frame')
+    return Response(gen_spo2(), mimetype='multipart/x-mixed-replace; boundary=frame')"""
 if __name__=='__main__':
     app.run(debug=True)
