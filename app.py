@@ -8,6 +8,8 @@ import sys
 app=Flask(__name__)
 webcam = cv2.VideoCapture(0)
 
+
+
 # Helper Methods
 def buildGauss(frame, levels):
     pyramid = [frame]
